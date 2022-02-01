@@ -1,3 +1,14 @@
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+
 body{
     margin: 0;
     font-family: "Lato", sans-serif;
@@ -65,9 +76,3 @@ body{
         float: none;
     }
   }
-footer {
-  text-align: center;
-  padding: 3px;
-  background-color: DarkSalmon;
-  color: white;
-}
