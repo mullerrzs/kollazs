@@ -30,3 +30,7 @@ p{
 img:hover + p {
     font-size: xx-large;
 }
+body{
+    background-color: #A877C8;
+    color: #A2DA5A;
+}

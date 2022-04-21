@@ -3,7 +3,7 @@
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: red;
+   background-color: #A2DA5A;
    color: white;
    text-align: center;
 }
@@ -12,6 +12,9 @@
 body{
     margin: 0;
     font-family: "Lato", sans-serif;
+    background-color: #A877C8;
+    color: #A2DA5A;
+    font-family: 'Times New Roman', Times, serif;
   }
   button{
       border-radius: 25px;
@@ -25,7 +28,7 @@ body{
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
+    background-color:#A2DA5A;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -39,7 +42,7 @@ body{
   }
   
   .sidebar a.active {
-    background-color: #04AA6D;
+    background-color: #A877C8;
     color: white;
   }
   
@@ -52,6 +55,7 @@ body{
     margin-left: 200px;
     padding: 1px 16px;
     height: 1000px;
+
   }
   
   @media screen and (max-width: 700px) {
@@ -76,3 +80,4 @@ body{
         float: none;
     }
   }
+
