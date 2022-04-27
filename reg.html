@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <title>Regisztráció</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+.mezo{
+            border: 2px solid #A2DA5A;
+            width: 400px;
+            height: 40px;
+            background-color: #A2B2DF;
+            color: #F7BB2A;
+            border-radius: 8px;
+            margin: 5px;
+            transition: 0.75s;
+            font-family: 'Times New Roman', Times, serif;
+            
+}
+.reg{
+            border: 2px solid #A2DA5A;
+            width: 400px;
+            height: 40px;
+            background-color: #A2B2DF;
+            color: black;
+            border-radius: 8px;
+            margin: 5px;
+            transition: 0.75s;
+            font-family: 'Times New Roman', Times, serif;
+}
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="https://mullerrzs.github.io/kollazs">HOME</a>
+
+        <a href="https://mullerrzs.github.io/kollazs/keplink.html">Képlink</a>
+
+        <a href="https://mullerrzs.github.io/kollazs/listak.html">Listák</a>
+
+        <a href="https://mullerrzs.github.io/kollazs/orarend.html">Órarend</a>
+
+        <a href="https://mullerrzs.github.io/kollazs/evszakok.html">Évszakok</a>
+
+   <a href="https://mullerrzs.github.io/kollazs/gomb.html">Gomb</a>
+
+   <a href="https://mullerrzs.github.io/kollazs/listak.html">Listák</a>
+
+   <a class="active"  href="https://mullerrzs.github.io/kollazs/regisztacio.html">Regisztrácó</a>
+
+    </div>
+  <div class="content">
+    <input class="mezo" style="background-color: #A2B2DF;" type="text" id="email_cim" placeholder="Email">
+    <br>
+    <input class="mezo" style="background-color: #A2B2DF;" type="password" id="pass1" placeholder="Jelszó">
+    <br>
+    <input class="mezo" style="background-color: #A2B2DF;" type="password" id="pass2" placeholder="Jelszó ismét">
+    <br>
+    <button class="reg" onclick="regist(email_cim.value, pass1.value, pass2.value)">Regisztrálok</button>
+  </div>
+
+    <script>
+        function regist(cim, jel1, jel2) {
+            if (cim != "") {
+                if (jel1 == jel2) {
+                    localStorage.setItem(cim, jel1)
+                    alert("Regisztrálva!")
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
